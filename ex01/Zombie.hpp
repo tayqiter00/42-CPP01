@@ -1,0 +1,25 @@
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
+
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <cstdlib>
+
+class Zombie
+{
+	private:
+		std::string	_name;
+
+	public:
+		Zombie(void);
+		Zombie(std::string name);
+		~Zombie(void);
+		void	setName(std::string name);
+		void	announce(void);
+
+};
+
+Zombie* zombieHorde(int N, std::string name);
+
+#endif
